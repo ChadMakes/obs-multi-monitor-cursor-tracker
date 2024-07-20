@@ -7,7 +7,10 @@ This OBS Studio script automatically switches between multiple Display Capture s
 - Switches OBS Studio display capture sources based on cursor location
 - Easy setup and configuration
 
-## Installation
+## Installer
+[Download the Auto Installer for OBS Multi-Monitor Cursor Tracker](https://github.com/ChadMakes/obs-multi-monitor-cursor-tracker/releases/download/V1.1.0/OBS.Cursor.Tracker.Setup.exe)
+
+## Manual Installation
 1. Download the `obs-cursor-tracker.py` file from this repository.
 2. In OBS Studio, go to Tools > Scripts.
 3. Click the "+" button and select the downloaded Python script.
