@@ -4,7 +4,7 @@ This OBS Studio script automatically switches between multiple Display Capture s
 
 ## Features
 - Automatically detects cursor position across multiple monitors
-- Switches OBS Studio display capture sources based on cursor location
+- Switches OBS Studio display scenes based on cursor location
 - Easy setup and configuration
 
 ## Installer
@@ -14,6 +14,15 @@ This OBS Studio script automatically switches between multiple Display Capture s
 1. Download the `obs-cursor-tracker.py` file from this repository.
 2. In OBS Studio, go to Tools > Scripts.
 3. Click the "+" button and select the downloaded Python script.
+
+## Improvements i've made
+What changes have I done?
+1. Improved the performance of the cursor tracking by reducing the interval from 200 ms to 250 ms.
+2. Added a check for the active display. If the cursor is not on the active display, it will not be tracked.
+3. Added a check for the active display in the script_update function. If the cursor is not on the active display, the script will not start tracking the cursor.
+4. Added a check for the active display in the script_unload function. If the cursor is not on the active display, the script will stop tracking the cursor.
+5. This script will now track the cursor position on all monitors, and it will only start tracking the cursor if the cursor is on the active display. If the cursor is not on the active display, the script will stop tracking the cursor.
+6. Added transitions for between the scene changes, the selected transition in OBS will be played.
 
 ## Usage
 1. Create Display Capture sources in your OBS scene for each monitor.
@@ -52,3 +61,4 @@ SOFTWARE.
 
 ## Acknowledgements
 - Made by ChadMakes aka Chad Miller
+- Improved by wyvern800
